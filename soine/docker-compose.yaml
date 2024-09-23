@@ -1,0 +1,18 @@
+services:
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    user: root
+    restart: always
+    command: tunnel run --token $CLOUDFLARED_TOKEN
+
+  cloudflared-ssh:
+    image: cloudflare/cloudflared:latest
+    user: root
+    restart: always
+    command: tunnel run --token $CLOUDFLARED_SSH_TOKEN
+
+  cloudflared-ssh3:
+    image: cloudflare/cloudflared:latest
+    user: root
+    restart: always
+    command: tunnel run --token $CLOUDFLARED_SSH3_TOKEN

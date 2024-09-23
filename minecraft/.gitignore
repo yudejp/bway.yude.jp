@@ -1,0 +1,38 @@
+# Jar
+*.jar
+
+# paper
+## Libraries, caches, etc.
+paper/libraries
+paper/versions
+paper/logs
+paper/cache
+paper/version_history.json
+paper/usercache.json
+paper/.console_history
+paper/plugins
+paper/bluemap
+## Worlds
+paper/world
+paper/world_nether
+paper/world_the_end
+## Configurations
+paper/eula.txt
+paper/wepif.yml
+paper/server.properties
+
+# Waterfall
+## Libraries, caches, etc.
+waterfall/modules
+waterfall/logs
+## Configurations
+waterfall/locations.yml
+### bStats
+waterfall/plugins
+waterfall/config.yml
+
+# Database
+## data directory
+db
+paper/map-color-cache.dat
+.env

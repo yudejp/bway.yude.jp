@@ -1,0 +1,20 @@
+services:
+  smokeping-slave:
+    image: dgraziotin/smokeping-slave
+    hostname: bway.tail5b1c5.ts.net
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Tokyo
+      - MASTER_URL=http://s-maple.tail5b1c5.ts.net:29000/smokeping/smokeping.cgi
+      - NO_WEB=1
+    env_file: ./.env
+    volumes:
+      - ./config:/config
+      - ./data:/data
+    ports:
+      - 29000:80
+    restart: always
+    dns:
+      - 100.100.100.100
+      - 1.1.1.1

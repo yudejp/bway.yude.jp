@@ -1,0 +1,7 @@
+[general]
+    location = "Tokyo, Japan"
+    connection = "NTT 東日本 フレッツ 光ネクスト, enひかり"
+[http]
+    destinations = [
+        "https://www.google.co.jp",
+    ]
